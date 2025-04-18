@@ -19,6 +19,7 @@ body, ul, li, h2 {
     position: sticky;
     top: 0;
     z-index: 1000;
+    /* background-color: #05a087; */
 }
 
 .navbar .logo {
