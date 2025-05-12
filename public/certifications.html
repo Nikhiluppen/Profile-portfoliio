@@ -1,0 +1,124 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Ega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    
+   
+    
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Nikhil's Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                 <li><a href="certifications.html">Certifications</a></li>
+
+                <!-- <li><a href="experiences.html">Experiences</a></li> -->
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nikhil-ega-a1b598226/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://indeed.com" target="_blank">Indeed</a>
+            <a href="https://joinhandshake.com" target="_blank">Handshake</a>
+        </div>
+    </header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    #certifications {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    #certifications h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .cert-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    .cert-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      color: #222;
+    }
+    .cert-card .issuer {
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+    .cert-link {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .cert-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      #certifications {
+        margin: 1rem auto;
+      }
+      .cert-card {
+        padding: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p class="issuer">Amazon</p>
+        <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/6dbd04f45e51449c9654e4a11ef45cf0" class="cert-link" target="_blank" rel="noopener">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Python Full‑Stack</h3>
+        <p class="issuer">Udemy</p>
+        <a href="https://www.your-cert-link.com/python-fullstack" class="cert-link" target="_blank" rel="noopener">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Full Stack Java, JSP, Hibernate, Spring, RESTful API, Spring Boot, JavaScript, React</h3>
+        <p class="issuer">Udemy</p>
+        <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-1e5af54f-c3a6-4d18-8163-4f855a2b12dd.pdf" class="cert-link" target="_blank" rel="noopener">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>HTML & CSS</h3>
+        <p class="issuer">SoloLearn</p>
+        <a href="https://www.your-cert-link.com/html-css" class="cert-link" target="_blank" rel="noopener">View Certificate</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

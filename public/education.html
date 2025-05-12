@@ -93,6 +93,8 @@ body {
                 <li><a href="education.html">Education</a></li>
                 <li><a href="Skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                                 <li><a href="certifications.html">Certifications</a></li>
+
                 <!-- <li><a href="experiences.html">Experiences</a></li> -->
             </ul>
         </nav>
@@ -451,6 +453,7 @@ body {
     
           // Create experience object
           const experience = {
+            
             role: `${role} – ${company}, ${location} (${date})`,
             responsibilities: responsibilities.split('\n'),
             summary: summary
@@ -463,6 +466,7 @@ body {
           saveExperiences();
     
           // Reset the form
+          // experince,
           experienceForm.reset();
         });
     
@@ -471,6 +475,7 @@ body {
       </script>
     <footer>
         <div class="container">
+          
             <p>&copy; Ega Nikhil Profile Portfolio</p>
         </div>
     </footer>
