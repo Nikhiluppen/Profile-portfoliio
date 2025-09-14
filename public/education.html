@@ -3,88 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhil Ega</title>
+    <title>Nikhil Ega Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     
-      
-   
-</>
-<style>
-    /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #484747;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #484747;
+        }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
+        .navbar .logo { font-size: 24px; font-weight: bold; color: #3498db; }
 
-/* Main Education Container */
-.education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a { text-decoration: none; color: #484747; font-weight: bold; }
 
-/* Individual Degree Sections */
-.master, .degree {
-    margin-bottom: 30px;
-    padding: 20px;
-    width: 100%;
-    background-color: #ecf0f1;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
+        .social-links a { margin-left: 10px; text-decoration: none; color: #3498db; }
 
-/* Degree Titles */
-.master h3, .degree h3 {
-    font-size: 24px;
-    color: #3353c6;  /* Red for emphasis */
-    margin-bottom: 10px;
-}
+        .education { display: flex; flex-direction: column; align-items: center; max-width: 900px; margin: 40px auto; padding: 20px; }
+        .master, .degree {
+            margin-bottom: 30px;
+            padding: 20px;
+            width: 100%;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .master h3, .degree h3 { font-size: 24px; color: #3353c6; margin-bottom: 10px; }
+        .master p, .degree p { font-size: 16px; color: #34495e; margin: 5px 0; }
+        .master:hover, .degree:hover { background-color: #dfe6e9; transform: scale(1.02); transition: all 0.3s ease; }
 
-/* Degree Description Text */
-.master p, .degree p {
-    font-size: 16px;
-    color: #34495e;
-    margin: 5px 0;
-}
+        #work-experience { background-color: #f9f9f9; padding: 50px 20px; }
+        #work-experience .container { max-width: 1200px; margin: 0 auto; }
+        #work-experience h2 { font-size: 36px; color: #2c3e50; text-align: center; margin-bottom: 30px; font-weight: bold; }
 
-/* Emphasizing Important Details (e.g., dates, GPA) */
-.master p strong, .degree p strong {
-    color: #2c3e50;  /* Darker text for important details */
-}
-
-/* Additional Margin Adjustments for the Text */
-.master p + p, .degree p + p {
-    margin-top: 5px;
-}
-
-.master p:last-child, .degree p:last-child {
-    margin-bottom: 0;
-}
-
-/* Hover Effect on Degree Items */
-.master:hover, .degree:hover {
-    background-color: #dfe6e9;  /* Light gray on hover */
-    transform: scale(1.02);  /* Slight zoom effect */
-    transition: all 0.3s ease;  /* Smooth transition */
-}
-
-</style>
+        .experience-item {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .experience-item h3 { font-size: 24px; color: #2c3e50; }
+        .experience-item ul { list-style-type: none; padding-left: 25px; }
+        .experience-item ul li {
+            font-size: 16px;
+            color: #555;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .experience-item ul li i { position: absolute; left: -25px; top: 0; color: #3498db; }
+        .experience-item .summary { font-size: 16px; font-style: italic; color: #555; margin-top: 15px; }
+    </style>
+</head>
 <body>
-    
+    <!-- Navbar -->
     <header class="navbar">
         <div class="logo">Nikhil's Portfolio</div>
         <nav>
@@ -93,16 +80,8 @@ body {
                 <li><a href="education.html">Education</a></li>
                 <li><a href="Skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                                 <li><a href="certifications.html">Certifications</a></li>
-                                 <li>
-        <a href="/assets/Nikhil_Ega%20Resume.pdf"
-           target="_blank"
-           rel="noopener">
-          Resume
-        </a>
-      </li>
-
-                <!-- <li><a href="experiences.html">Experiences</a></li>ejrbfwafb.wejfu4hg; ughf34gfl -->
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="/assets/Nikhil_Ega%20Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
             </ul>
         </nav>
         <div class="social-links">
@@ -112,17 +91,18 @@ body {
             <a href="https://joinhandshake.com" target="_blank">Handshake</a>
         </div>
     </header>
+
+    <!-- Education -->
     <section class="education">
-      
         <div class="master">
             <h3>Master's in Information Technology</h3>
             <p><strong>SAINT LOUIS UNIVERSITY</strong></p>
-              <p>Missouri, United States </p>
-             <p> Expected Graduation: May 2025</p>
-            <p><strong>GPA:</strong> 3.76/4.00</p>
-            
+            <p>Missouri, United States</p>
+            <p>Expected Graduation: May 2025</p>
+            <p><strong>GPA:</strong> 3.8/4.0</p>
         </div>
-        <div class="degree">
+    </section>
+     <div class="degree">
             <h3>Bachelor's in Mechanical Engineering</h3>
             <p><strong>Vignana Bharathi Institute of Science and Technology</strong></p>
               <p>Telangana, India </p>
@@ -130,363 +110,67 @@ body {
             <p><strong>GPA:</strong> 7.0/10.0</p>
             
         </div>
-        
-        </div>
-    </section>
-    <style> #work-experience {
-        background-color: #f9f9f9;
-        padding: 50px 20px;
-        font-family: 'Arial', sans-serif;
-    }
-    
-    #work-experience .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-    
-    #work-experience h2 {
-        font-size: 36px;
-        color: #2c3e50;
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: bold;
-    }
-    
-    .experience-item {
-        background-color: #fff;
-        padding: 30px;
-        margin-bottom: 40px;
-        border-radius: 8px;
-        border-left: 5px solid #3498db;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative;
-    }
-    
-    .experience-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
-    }
-    
-    .experience-icon {
-        font-size: 40px;
-        color: #3498db;
-        position: absolute;
-        top: -20px;
-        left: -20px;
-    }
-    
-    .experience-item h3 {
-        font-size: 24px;
-        color: #2c3e50;
-        margin-bottom: 15px;
-    }
-    
-    .experience-item .role {
-        font-weight: bold;
-        color: #3498db;
-    }
-    
-    .responsibilities {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .responsibilities li {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 10px;
-        padding-left: 25px;
-        position: relative;
-    }
-    
-    .responsibilities li i {
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-size: 18px;
-        color: #3498db;
-    }
-    
-    .summary {
-        font-size: 18px;
-        color: #555;
-        margin-top: 20px;
-        font-style: italic;
-        text-align: justify;
-    }
-    </style>
+
+    <!-- Work Experience -->
     <section id="work-experience">
         <div class="container">
-          <h2>Work Experience</h2>
-      
-          <div class="experience-item">
-            <div class="experience-icon"><i class="fas fa-laptop-code"></i></div>
-            <h3><span class="role">Software Developer</span> – Calibers Technologies Private Limited, Telangana, India (June 2023)</h3>
-            <ul class="responsibilities">
-              <li><i class="fas fa-check-circle"></i> Developed and implemented <strong>front-end UI screens</strong>...</li>
-              <li><i class="fas fa-check-circle"></i> Utilized <strong>Angular CLI</strong>, leveraging <strong>HTML, CSS, and TypeScript</strong>...</li>
-              <li><i class="fas fa-check-circle"></i> Collaborated with cross-functional teams...</li>
-              <li><i class="fas fa-check-circle"></i> Led a team of developers...</li>
-              <li><i class="fas fa-check-circle"></i> Conducted <strong>code reviews</strong>...</li>
-              <li><i class="fas fa-check-circle"></i> Worked in an <strong>agile development environment</strong>...</li>
-            </ul>
-            <p class="summary">This experience showcases my ability to develop, manage, and deliver high-quality front-end solutions...</p>
-          </div>
-        </div>
-      </section>
+            <h2>Work Experience</h2>
 
+            <!-- Full Stack Job Portal Intern -->
+            <div class="experience-item">
+                <h3>Full Stack Job Portal Website Intern – Saint Louis University (August 2024 – May 2025)</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Designed and developed a full-stack job portal using Java Spring Boot, React.js, and MySQL, improving job search efficiency by ~40%.</li>
+                    <li><i class="fas fa-check-circle"></i> Built scalable backend services with Spring Boot REST APIs for authentication, job postings, and profile management.</li>
+                    <li><i class="fas fa-check-circle"></i> Implemented secure resume upload functionality using AWS S3 with user data stored on AWS RDS/MySQL.</li>
+                    <li><i class="fas fa-check-circle"></i> Developed reusable and responsive React components with advanced job filtering to enhance discoverability.</li>
+                    <li><i class="fas fa-check-circle"></i> Integrated microservices for job recommendations and analytics, deployed via AWS Lambda and API Gateway, reducing operational costs by 25%.</li>
+                    <li><i class="fas fa-check-circle"></i> Created Java utilities for resume parsing and skill extraction, automating user profile enrichment.</li>
+                    <li><i class="fas fa-check-circle"></i> Monitored API performance and errors using AWS CloudWatch, enabling proactive optimization.</li>
+                    <li><i class="fas fa-check-circle"></i> Built interactive dashboards with Chart.js in React to visualize job trends and skill insights.</li>
+                    <li><i class="fas fa-check-circle"></i> Applied Agile methodologies using Jira and Trello to manage sprints, feature delivery, and UI/UX improvements.</li>
+                </ul>
+            </div>
 
-      <!-- add new experince file -->
-      <title>Work Experience</title>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f9;
-          margin: 0;
-          padding: 0;
-        }
-    
-        .container {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 20px;
-        }
-    
-        h1 {
-          text-align: center;
-          font-size: 36px;
-          color: #333;
-        }
-    
-        .form-container {
-          background-color: #fff;
-          padding: 20px;
-          margin: 30px 0;
-          border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        .form-container input,
-        .form-container textarea {
-          width: 100%;
-          padding: 10px;
-          margin-bottom: 20px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 16px;
-        }
-    
-        .form-container button {
-          padding: 10px 20px;
-          background-color: #3498db;
-          color: #fff;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-        }
-    
-        .form-container button:hover {
-          background-color: #2980b9;
-        }
-    
-        .experience-item {
-          background-color: #fff;
-          padding: 20px;
-          margin: 20px 0;
-          border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        .experience-item h3 {
-          font-size: 24px;
-          color: #333;
-        }
-    
-        .experience-item ul {
-          list-style-type: none;
-          padding-left: 20px;
-        }
-    
-        .experience-item ul li {
-          font-size: 16px;
-          color: #555;
-        }
-    
-        .experience-item p.summary {
-          font-size: 16px;
-          color: #555;
-          font-style: italic;
-        }
-    
-        .delete-btn {
-          background-color: #e74c3c;
-          color: #fff;
-          padding: 5px 10px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 14px;
-          margin-top: 10px;
-        }
-    
-        .delete-btn:hover {
-          background-color: #c0392b;
-        }
-    
-        .save-btn {
-          background-color: #2ecc71;
-          color: #fff;
-          padding: 5px 10px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 14px;
-          margin-top: 10px;
-        }
-    
-        .save-btn:hover {
-          background-color: #27ae60;
-        }
-    
-        .saved-experience-heading {
-          font-size: 28px;
-          text-align: center;
-          margin: 40px 0 20px;
-          color: #333;
-        }
-    
-      </style>
-    </head>
-    <body>
-    
-      <div class="container">
-        <h1>Work Experience</h1>
-    
-        <!-- Form to Add New Work Experience -->
-        <!-- <div class="form-container">
-          <h2>Add New Work Experience</h2>
-          <form id="experience-form">
-            <label for="role">Role:</label>
-            <input type="text" id="role" required placeholder="e.g., Software Developer">
-    
-            <label for="company">Company Name:</label>
-            <input type="text" id="company" required placeholder="e.g., Calibers Technologies">
-    
-            <label for="location">Location:</label>
-            <input type="text" id="location" required placeholder="e.g., Telangana, India">
-    
-            <label for="date">Date (Start - End):</label>
-            <input type="text" id="date" required placeholder="e.g., June 2023 - Present">
-    
-            <label for="responsibilities">Responsibilities:</label>
-            <textarea id="responsibilities" rows="5" required placeholder="List your responsibilities..."></textarea>
-    
-            <label for="summary">Summary:</label>
-            <textarea id="summary" rows="3" required placeholder="Summarize the experience..."></textarea>
-    
-            <button type="submit">Add Experience</button>
-          </form>
-        </div> -->
-    
-        <!-- Heading for Saved Work Experiences -->
-        <h2 class="saved-experience-heading">Saved Work Experiences</h2>
-    
-        <!-- List of Work Experiences -->
-        <div id="experience-list">
-          <!-- Dynamically added work experiences will appear here -->
+            <!-- Software Developer at Calibers -->
+            <div class="experience-item">
+                <h3>Software Developer – Calibers Technologies Pvt. Ltd., India (May 2022 – July 2023)</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Developed and optimized responsive front-end UIs using Angular, React.js, and Vue.js, enhancing user experience and reducing page load times.</li>
+                    <li><i class="fas fa-check-circle"></i> Implemented scalable backend microservices with Java Spring Boot and REST APIs, ensuring modularity and efficient system performance.</li>
+                    <li><i class="fas fa-check-circle"></i> Integrated applications with MySQL databases, applying Hibernate ORM for persistence, query optimization, and large dataset handling.</li>
+                    <li><i class="fas fa-check-circle"></i> Designed reusable React components and Vue.js lifecycle hooks, improving UI consistency and reducing future development effort.</li>
+                    <li><i class="fas fa-check-circle"></i> Configured AWS S3 for secure storage, static hosting, and accessibility, while deploying backend services using AWS Lambda and API Gateway.</li>
+                    <li><i class="fas fa-check-circle"></i> Built Java utilities for document parsing, automated reporting, and workflow optimization.</li>
+                    <li><i class="fas fa-check-circle"></i> Conducted unit testing with JUnit and Mockito, reducing defects by 15%, and performed API validation using Postman and Python requests.</li>
+                    <li><i class="fas fa-check-circle"></i> Enhanced dashboards with interactive charting libraries, delivering real-time insights for stakeholders.</li>
+                    <li><i class="fas fa-check-circle"></i> Participated in Agile methodology, including sprint planning, daily standups, retrospectives, and continuous delivery.</li>
+                    <li><i class="fas fa-check-circle"></i> Applied Git workflows for efficient version control, collaboration, and CI/CD pipeline integration.</li>
+                </ul>
+            </div>
+
+            <!-- Software Developer Intern at Alleskonner -->
+            <div class="experience-item">
+                <h3>Software Developer Intern – Alleskonner, Hyderabad (June 2021 – May 2022)</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Developed UI modules using React.js and AngularJS to improve user dashboards and workflows.</li>
+                    <li><i class="fas fa-check-circle"></i> Integrated REST APIs built with Java Spring Boot into React applications for real-time data display.</li>
+                    <li><i class="fas fa-check-circle"></i> Designed form validation and workflow automation in React to streamline user interactions.</li>
+                    <li><i class="fas fa-check-circle"></i> Assisted in backend development by creating Spring Boot APIs for authentication and profile management.</li>
+                    <li><i class="fas fa-check-circle"></i> Participated in Agile sprints, contributing to planning, daily standups, and retrospectives.</li>
+                    <li><i class="fas fa-check-circle"></i> Enhanced UI responsiveness and interactivity using Vue.js lifecycle hooks and dynamic rendering.</li>
+                    <li><i class="fas fa-check-circle"></i> Configured AWS S3 buckets for storing application data and reports.</li>
+                    <li><i class="fas fa-check-circle"></i> Performed API testing using Postman and Python requests library.</li>
+                    <li><i class="fas fa-check-circle"></i> Applied Git workflows for collaborative development and version control.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    
-      <script>
-        const experienceForm = document.getElementById('experience-form');
-        const experienceList = document.getElementById('experience-list');
-    
-        // Function to load saved experiences from localStorage
-        function loadExperiences() {
-          const savedExperiences = JSON.parse(localStorage.getItem('experiences')) || [];
-          savedExperiences.forEach(experience => {
-            displayExperience(experience);
-          });
-        }
-    
-        // Function to save experiences to localStorage
-        function saveExperiences() {
-          const allExperiences = [];
-          const experienceItems = document.querySelectorAll('.experience-item');
-          experienceItems.forEach(item => {
-            const role = item.querySelector('h3').textContent;
-            const responsibilities = item.querySelector('ul').innerText.split('\n').map(res => res.trim()).filter(Boolean);
-            const summary = item.querySelector('.summary').textContent;
-            allExperiences.push({ role, responsibilities, summary });
-          });
-          localStorage.setItem('experiences', JSON.stringify(allExperiences));
-        }
-    
-        // Function to display a new experience item in the list
-        function displayExperience(experience) {
-          const experienceItem = document.createElement('div');
-          experienceItem.classList.add('experience-item');
-          experienceItem.innerHTML = `
-            <h3>${experience.role}</h3>
-            <ul>
-              ${experience.responsibilities.map(res => `<li>${res}</li>`).join('')}
-            </ul>
-            <p class="summary">${experience.summary}</p>
-            <button class="delete-btn">Delete</button>
-          `;
-    
-          // Add Delete functionality
-          experienceItem.querySelector('.delete-btn').addEventListener('click', () => {
-            experienceItem.remove();
-            saveExperiences(); // Save the updated list after deletion
-          });
-    
-          experienceList.appendChild(experienceItem);
-        }
-    
-        // Event listener for form submission
-        experienceForm.addEventListener('submit', function(event) {
-          event.preventDefault();
-    
-          const role = document.getElementById('role').value;
-          const company = document.getElementById('company').value;
-          const location = document.getElementById('location').value;
-          const date = document.getElementById('date').value;
-          const responsibilities = document.getElementById('responsibilities').value;
-          const summary = document.getElementById('summary').value;
-    
-          // Create experience object
-          const experience = {
-            
-            role: `${role} – ${company}, ${location} (${date})`,
-            responsibilities: responsibilities.split('\n'),
-            summary: summary
-          };
-    
-          // Display the new experience
-          displayExperience(experience);
-    
-          // Save experiences to localStorage
-          saveExperiences();
-    
-          // Reset the form
-          // experince,
-          experienceForm.reset();
-        });
-    
-        // Load savaSed experiences on page load
-        loadExperiences();
-      </script>
+    </section>
+
     <footer>
         <div class="container">
-          
-            <p>&copy; Ega Nikhil Profile Portfolio</p>
+            <p>&copy; Nikhil Ega Portfolio</p>
         </div>
     </footer>
-     
 </body>
-</html>    
-
+</html>
